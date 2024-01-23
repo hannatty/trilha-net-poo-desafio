@@ -1,5 +1,5 @@
-### Desafio
-Criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. Programa desenvolvido com base em conceitos de POO.
+### Desafio Proposto
+Criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. Programa desenvolvido com base em conceitos de POO utilizando C#.
 
 ### Classe Abstrata Smartphone
 Atributos
@@ -10,9 +10,8 @@ Atributos
 - `Memoria`: int
   
 Métodos:
-
 - `Ligar`
-- `InstalarApp`
+- `InstalarAplicativo`
 - `ExibirConfiguracoes`
 
 ### Classe Nokia
@@ -32,9 +31,13 @@ Método extra:
 
 - `FazerChamadaEmGrupo`
 
+Funcionalidade extra:
+- `Testes unitários tanto da classe Nokia quanto da classe Iphone utilizando xUnit.`
+
 
 ## Tecnologias Utilizadas
 <div style="display: inline_block">
-<img align="center" alt="JsIcon" height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/csharp/csharp-plain.svg">
+  <img align="center" alt="JsIcon" height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/csharp/csharp-plain.svg">
   <img align="center" alt="JsIcon" height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/dotnetcore/dotnetcore-original.svg">
+  
 </div>
