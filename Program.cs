@@ -10,6 +10,8 @@ nokia.ExibirConfiguracoes();
 Console.WriteLine("--------------------------------");
 Console.WriteLine("");
 
+Console.WriteLine("############################################");
+
 Console.WriteLine("Configurando Smartphone Iphone");
 Iphone iphone = new Iphone("998980909", "Iphone 14 PRO", "55564756", 250, "Dourado");
 iphone.Ligar();

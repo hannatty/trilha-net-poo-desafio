@@ -11,18 +11,25 @@ namespace DesafioPOO.Models
             Console.WriteLine("******* SNAKE GAME INICIANDO *******");
         }
 
-        public override void InstalarAplicativo(string nomeApp)
+        public override string InstalarAplicativo(string nomeApp)
         {
-            if (nomeApp != ""){
-            Console.WriteLine($"Aplicativo {nomeApp} instalado com sucesso no seu Nokia!");
+            if(nomeApp != ""){
+                string feedbackMessage = $"Aplicativo {nomeApp} instalado com sucesso no seu Nokia!";
+                Console.WriteLine(feedbackMessage);
+                return feedbackMessage;
             } else {
-                Console.WriteLine("É preciso fornecer o nome do App a ser instalado.");
+                string feedbackMessage = "É preciso fornecer o nome do App a ser instalado";
+                Console.WriteLine(feedbackMessage);
+                return feedbackMessage;
             }
+            
         }
 
-        public override void ExibirConfiguracoes()
+        public override string ExibirConfiguracoes()
         {
-            Console.WriteLine($"Ficha Técnica do seu Aparelho Nokia:\nModelo:{Modelo}\nImei:{Imei}\nMemória:{Memoria}");
+            string configMessage = $"Ficha Técnica do seu Aparelho Nokia:\nModelo:{Modelo}\nImei:{Imei}\nMemória:{Memoria}";
+            Console.WriteLine(configMessage);
+            return configMessage;
         }
     }
 }

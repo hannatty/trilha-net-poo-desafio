@@ -7,23 +7,31 @@ namespace DesafioPOO.Models
         {
             Cor = cor;
         }
-        public void FazerChamadaEmGrupo(string phone1, string phone2, string phone3 )
+        public string FazerChamadaEmGrupo(string phone1, string phone2, string phone3 )
         {
-            Console.WriteLine($"Chamada em grupo iniciada com contatos: {phone1} / {phone2} / {phone3}");
+            string mensagem = $"Chamada em grupo iniciada com contatos: {phone1} / {phone2} / {phone3}";
+            Console.WriteLine(mensagem);
+            return mensagem;
         }
-        public override void InstalarAplicativo(string nomeApp)
+        public override string InstalarAplicativo(string nomeApp)
         {
             if(nomeApp != ""){
-                Console.WriteLine($"Aplicativo {nomeApp} instalado com sucesso no seu Iphone!");
+                string feedbackMessage = $"Aplicativo {nomeApp} instalado com sucesso no seu Iphone!";
+                Console.WriteLine(feedbackMessage);
+                return feedbackMessage;
             } else {
-                Console.WriteLine("É preciso fornecer o nome do App a ser instalado");
+                string feedbackMessage = "É preciso fornecer o nome do App a ser instalado";
+                Console.WriteLine(feedbackMessage);
+                return feedbackMessage;
             }
             
-        }
+        }      
 
-        public override void ExibirConfiguracoes()
+        public override string ExibirConfiguracoes()
         {
-            Console.WriteLine($"Ficha Técnica do seu Iphone:\nModelo:{Modelo}\nImei:{Imei}\nMemória:{Memoria}\nCor:{Cor}");
+            string mensagem = $"Ficha Técnica do seu Iphone:\nModelo:{Modelo}\nImei:{Imei}\nMemória:{Memoria}\nCor:{Cor}";
+            Console.WriteLine(mensagem);
+            return mensagem;
         }
     }
 }
